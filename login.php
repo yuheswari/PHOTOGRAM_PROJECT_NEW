@@ -17,6 +17,7 @@ include 'libs/load.php'
 
   <link href="/app_new/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;

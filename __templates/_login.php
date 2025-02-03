@@ -17,7 +17,6 @@
         <input type="checkbox" value="remember-me" data-dashlane-rid="18e980b153d3b347" data-dashlane-classification="consent,rememberme"> Remember me
       </label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit" data-dashlane-label="true" data-dashlane-rid="c0faaa06246cdd62" data-dashlane-classification="action,login" data-kwimpalastatus="dead">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+    <button class="w-100 btn btn-lg btn-primary " type="submit" data-dashlane-label="true" data-dashlane-rid="c0faaa06246cdd62" data-dashlane-classification="action,login" data-kwimpalastatus="dead">Sign in</button>
   </form>
 </main>
