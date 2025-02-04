@@ -1,29 +1,8 @@
-<?php
-
-$username = $_POST['email_address'];
-$password = $_POST['password'];
-
-$result = validate_credentials($username, $password);
-
-if ($result) {
-    ?>
-<main class="container">
-    <div class="bg-light p-5 rounded mt-3">
-        <h1>Login Success</h1>
-        <p class="lead">GOOD TRY UK!!</p>
-    </div>
-</main>
-<?php
-} else {
-        ?>
-
-
-
 <main class="form-signin">
     <form method="post" action="login.php">
         <img class="mb-4" src="https://git.selfmade.ninja/uploads/-/system/appearance/logo/1/Logo_Dark.png" alt=""
             height="50">
-        <h1 class="h3 mb-3 fw-normal">Please Login in</h1>
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
         <div class="form-floating">
             <input name="email_address" type="email" class="form-control" id="floatingInput"
@@ -43,6 +22,3 @@ if ($result) {
         <button class="w-100 btn btn-lg btn-primary hvr-grow-rotate" type="submit">Sign in</button>
     </form>
 </main>
-
-<?php
-    }
