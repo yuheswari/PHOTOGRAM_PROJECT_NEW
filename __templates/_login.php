@@ -1,3 +1,24 @@
+<?php
+
+$username = $_POST['email_address']; //array
+$password=$_POST['password'];
+
+$result=validate_credentials($username,$password);
+if($result){
+  ?>
+  <main class="container">
+  <div class="bg-light p-5 rounded mt-3">
+    <h1>LOGIN SUCESSFULL!!</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
+    <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">View navbar docs »</a>
+  </div>
+</main>
+  <?
+}else{
+?>
+
+
+
 <main class="form-signin w-100 m-auto">
   <form data-dashlane-rid="4927a1416e3c1835" data-dashlane-classification="login">
     <img class="mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbN2VZbDL7niCk7w1ZOXWm99r2C3PoyPqwKn-_1rarCHKeQv6T13b2Erxm6gR0TeAr0BU&usqp=CAU" alt="" width="72" height="57">
@@ -20,3 +41,6 @@
     <button class="w-100 btn btn-lg btn-primary " type="submit" data-dashlane-label="true" data-dashlane-rid="c0faaa06246cdd62" data-dashlane-classification="action,login" data-kwimpalastatus="dead">Sign in</button>
   </form>
 </main>
+<?php
+}
+?>

@@ -1,6 +1,7 @@
-<?
+<?php
 
-include 'libs/load.php'
+include 'libs/load.php';
+
 
 ?>
 <!doctype html>
