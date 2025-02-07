@@ -10,7 +10,7 @@ if ($result) {
 <main class="container">
     <div class="bg-light p-5 rounded mt-3">
         <h1>Login Success</h1>
-        <p class="lead">GOOD TRY UK!!</p>
+        <p class="lead">This example is a quick exercise to do basic login with html forms.</p>
     </div>
 </main>
 <?php
@@ -23,7 +23,7 @@ if ($result) {
     <form method="post" action="login.php">
         <img class="mb-4" src="https://git.selfmade.ninja/uploads/-/system/appearance/logo/1/Logo_Dark.png" alt=""
             height="50">
-        <h1 class="h3 mb-3 fw-normal">Please Login in</h1>
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
         <div class="form-floating">
             <input name="email_address" type="email" class="form-control" id="floatingInput"

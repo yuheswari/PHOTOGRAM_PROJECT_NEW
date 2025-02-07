@@ -13,7 +13,7 @@ include 'libs/load.php';
     <?load_template('_header');?>
     <main>
 
-        <?load_template('_login');?>
+        <?load_template('_signup');?>
 
     </main>
     <?load_template('_footer');?>

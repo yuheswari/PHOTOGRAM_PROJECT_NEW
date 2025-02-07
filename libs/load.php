@@ -13,3 +13,4 @@ function validate_credentials($username, $password)
         return false;
     }
 }
+
