@@ -8,6 +8,13 @@
 
 
 <link href="/app_new/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- <link href="/app_new/css/ -->
-   
-</head>
+ <!-- <link href="/app_new/css/  -->
+ <?if (file_exists($_SERVER['DOCUMENT_ROOT'].'/app_new/css/'.basename($_SERVER['PHP_SELF'], ".php").".css")) {?>
+    <link
+        href="/app_new/css/<?=basename($_SERVER['PHP_SELF'], ".php")?>.css"
+        rel="stylesheet">
+    <?}?>
+
+    
+
+</head> 
