@@ -2,7 +2,7 @@
 
 function load_template($name)
 {
-    include $_SERVER['DOCUMENT_ROOT']."/app/_templates/$name.php"; //not consistant.
+    include $_SERVER['DOCUMENT_ROOT']."/app_new/_templates/$name.php"; //not consistant.
 }
 
 function validate_credentials($username, $password)
