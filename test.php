@@ -12,7 +12,13 @@ include 'libs/load.php';
 // print("_COOKIES\n");
 // print_r($_COOKIE);
 
-signup("","","","");
+if(signup("yuhess","passwordd","yuheds@gmail.com","999909999")){ 
+    echo "Success";
+}else{
+    echo "Failed";
+}
+    
+
 
 ?>
 </pre>                

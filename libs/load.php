@@ -7,7 +7,7 @@ function load_template($name)
 
 function validate_credentials($username, $password)
 {
-    if ($username == "uk@gmail.com" and $password == "password") {
+    if ($username == "uk@gmail.com" and $password == "password") {   
         return true;
     } else {
         return false;
@@ -16,30 +16,30 @@ function validate_credentials($username, $password)
 function signup($username,$password,$email,$phone){
 
 $servername = "mysql.selfmade.ninja";
-$username = "yuhes";
-$password = "abcdefg_12345";
+$user = "yuhes";
+$pass = "abcdefg_12345";
 $dbname = "yuhes_photo";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $user, $pass, $dbname);
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
-}
-else{
-    print("Connection Success!!");
-}
+} 
+$sql="INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `blocked`, `active`)
+VALUES ('$username', '$password', '$email','$phone','0', '1');";
 
-// $sql = "INSERT INTO MyGuests (firstname, lastname, email)
-// VALUES ('John', 'Doe', 'john@example.com')";
+//echo $sql;
 
-// if ($conn->query($sql) === TRUE) {
-//   echo "New record created successfully";
-// } else {
-//   echo "Error: " . $sql . "<br>" . $conn->error;
-// }
+$result=false;
+if ($conn->query($sql) === TRUE) {
+  $result=true;
+ } else {
+    $result=false;
+ }
 
-// $conn->close();
+ $conn->close();
+ return $result;
 
 }
 

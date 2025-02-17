@@ -37,7 +37,7 @@ if (isset($_POST['username']) and isset($_POST['password']) and isset($_POST['em
     } else {
         ?>
 <main class="form-signup">
-    <form method="post" action="/test.php">
+    <form method="post" action="signup.php">
         <img class="mb-4" src="https://git.selfmade.ninja/uploads/-/system/appearance/logo/1/Logo_Dark.png" alt=""
             height="50">
         <h1 class="h3 mb-3 fw-normal">Signup here</h1>
