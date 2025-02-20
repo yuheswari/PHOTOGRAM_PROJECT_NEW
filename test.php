@@ -9,7 +9,7 @@ include 'libs/load.php';
 // print_r($_POST);
 // print("_FILE \n");
 // print_r($_FILES);
-// print("_COOKIES\n");
+// print("_COOKIES\n"); 
 // print_r($_COOKIE);
 
 if(signup("yuhess","passwordd","yuheds@gmail.com","999909999")){ 
@@ -17,8 +17,22 @@ if(signup("yuhess","passwordd","yuheds@gmail.com","999909999")){
 }else{
     echo "Failed";
 }
-    
+ $mic1 = new Mic("Roda"); //constructing the object
+ $mic2 = new Mic("HyperX"); //constructing the object
 
 
-?>
-</pre>                
+ $mic1->setLight("White");
+ $mic2->setLight("Green");
+
+ print(ucwords("hyper quad cast"));
+ $mic1->setModel("hyper quad cast");
+ print("Model of 1st mic is ".$mic1->getModelProxy());
+ print("\n".$mic1->getBrand());
+ print("\n".$mic2->getBrand());
+
+ print("Value of 10+12 is ".$mic1->add(10, 12));
+
+
+
+ ?>
+ </pre>                

@@ -17,12 +17,12 @@ include 'libs/load.php'
   <main>
 
 
- <?load_template(('_calltoaction'));?>
+ <?load_template('_calltoaction');?>
 
-  <?load_template(('_photogram'));?>
+  <?load_template('_photogram');?>
 </main>
 
-<?load_template(('_footer'));?>
+<?load_template('_footer');?>
 
 
     <script src="/app_new/assets/dist/js/bootstrap.bundle.min.js"></script>
