@@ -1,6 +1,8 @@
+
 <pre>
 <?php
 include 'libs/load.php';
+include 'libs/includes/Mic.class.php';
 // print("_SERVER \n");
 // print_r($_SERVER);
 // print("_GET \n");
@@ -12,11 +14,12 @@ include 'libs/load.php';
 // print("_COOKIES\n"); 
 // print_r($_COOKIE);
 
-if(signup("yuhess","passwordd","yuheds@gmail.com","999909999")){ 
-    echo "Success";
-}else{
-    echo "Failed";
-}
+// if(signup("yuhess","passwordd","yuheds@gmail.com","999909999")){ 
+//     echo "Success";
+// }else{
+//     echo "Failed";
+// }
+
  $mic1 = new Mic("Roda"); //constructing the object
  $mic2 = new Mic("HyperX"); //constructing the object
 
@@ -35,4 +38,4 @@ if(signup("yuhess","passwordd","yuheds@gmail.com","999909999")){
 
 
  ?>
- </pre>                
+ </pre>
