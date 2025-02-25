@@ -1,4 +1,3 @@
-
 <pre>
 <?php
 include 'libs/load.php';
@@ -34,6 +33,7 @@ include 'libs/includes/Mic.class.php';
  print("\n".$mic2->getBrand());
 
  print("Value of 10+12 is ".$mic1->add(10, 12));
+ print("this is mono inside the pre tag");
 
 
 

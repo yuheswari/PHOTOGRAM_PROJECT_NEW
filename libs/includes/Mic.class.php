@@ -29,7 +29,7 @@ class Mic {
         return $a + $b;
     }
     public function __destruct() {
-        printf("Destructing object....");
+        printf("Destructing object....:brand:$this->brand..");
     }
 }
 ?>
