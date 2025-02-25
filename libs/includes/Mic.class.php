@@ -4,6 +4,10 @@ class Mic {
     private $model;
     private $light;
 
+    public static function testfunction(){   //static function
+        printf("This is a static function...");
+    }
+
     public function __construct($brand) {
         $this->brand = $brand;
         printf("Constructing object....");

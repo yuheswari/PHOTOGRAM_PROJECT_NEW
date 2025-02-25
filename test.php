@@ -22,6 +22,7 @@ include 'libs/includes/Mic.class.php';
  $mic1 = new Mic("Roda"); //constructing the object
  $mic2 = new Mic("HyperX"); //constructing the object
 
+Mic::testfunction(); //calling static function no constructor is called no destruct is called
 
  $mic1->setLight("White");
  $mic2->setLight("Green");
