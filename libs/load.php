@@ -1,6 +1,7 @@
 <?php
 
 include_once 'includes/Mic.class.php';
+include_once 'includes/User.class.php';
 include_once 'includes/Database.class.php';
 
 function load_template($name)
@@ -15,21 +16,7 @@ function validate_credentials($username, $password)
     } else {
         return false;
     }
+
+
+
 }
-// function signup($user, $pass, $email, $phone) {
-// $conn=Database::getConnection();
-
-// $sql = "INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `active`)
-// VALUES ('$user', '$pass', '$email', '$phone', '1');";
-// $error = false;
-// if ($conn->query($sql) == true) {
-//     $error = false;
-// } else {
-//     // echo "Error: " . $sql . "<br>" . $conn->error;
-//     $error = $conn->error;
-// }
-
-// return $error;
-// }
-
-
