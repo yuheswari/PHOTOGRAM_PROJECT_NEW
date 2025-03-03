@@ -36,4 +36,10 @@ class Mic {
         printf("Destructing object....:brand:$this->brand..");
     }
 }
+    class DupMic{
+        public static function testfunction(){
+            printf("This is a static function...");
+        }
+    }
+
 ?>
