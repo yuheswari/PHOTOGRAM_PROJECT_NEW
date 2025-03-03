@@ -3,6 +3,8 @@ class Mic {
     private $brand;
     private $model;
     private $light;
+    public static $test;
+
 
     public static function testfunction(){   //static function
         printf("This is a static function...");

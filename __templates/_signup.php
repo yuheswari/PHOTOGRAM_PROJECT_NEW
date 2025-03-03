@@ -1,5 +1,11 @@
 <?php
 
+function signup($username, $password, $email, $phone) {
+    // Add your signup logic here
+    // Return false if signup is successful, otherwise return an error message
+    return false;
+}
+
 $signup = false;
 if (isset($_POST['username']) and isset($_POST['password']) and isset($_POST['email_address']) and isset($_POST['phone'])) {
     $username = $_POST['username'];

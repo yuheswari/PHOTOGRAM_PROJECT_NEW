@@ -1,5 +1,8 @@
 <?php
 
+include_once 'includes/Mic.class.php';
+include_once 'includes/Database.class.php';
+
 function load_template($name)
 {
     include $_SERVER['DOCUMENT_ROOT']."/app_new/__templates/$name.php"; //not consistant.
@@ -13,33 +16,20 @@ function validate_credentials($username, $password)
         return false;
     }
 }
-function signup($username,$password,$email,$phone){
+function signup($user, $pass, $email, $phone) {
+$conn=Database::getConnection();
 
-$servername = "mysql.selfmade.ninja";
-$user = "yuhes";
-$pass = "abcdefg_12345";
-$dbname = "yuhes_photo";
-
-// Create connection
-$conn = new mysqli($servername, $user, $pass, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-} 
-$sql="INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `blocked`, `active`)
-VALUES ('$username', '$password', '$email','$phone','0', '1');";
-
-//echo $sql;
-
-$result=false;
-if ($conn->query($sql) === TRUE) {
-  $result=true;
- } else {
-    $result=false;
- }
-
- $conn->close();
- return $result;
-
+$sql = "INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `active`)
+VALUES ('$user', '$pass', '$email', '$phone', '1');";
+$error = false;
+if ($conn->query($sql) == true) {
+    $error = false;
+} else {
+    // echo "Error: " . $sql . "<br>" . $conn->error;
+    $error = $conn->error;
 }
+
+return $error;
+}
+
 

@@ -1,7 +1,7 @@
 <pre>
 <?php
 include 'libs/load.php';
-include 'libs/includes/Mic.class.php';
+// include 'libs/includes/Mic.class.php';
 // print("_SERVER \n");
 // print_r($_SERVER);
 // print("_GET \n");
@@ -35,6 +35,13 @@ Mic::testfunction(); //calling static function no constructor is called no destr
 
  print("Value of 10+12 is ".$mic1->add(10, 12));
  print("this is mono inside the pre tag");
+
+ $conn=Database::getConnection();
+ $conn=Database::getConnection();
+ $conn=Database::getConnection();
+ $conn=Database::getConnection();
+
+
 
 
 
